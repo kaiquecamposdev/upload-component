@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+:root {
+
+  --purple-title: #7C3AED;
+  --gray-text: #746E82;
+
+  --bg-color: #FBFAFF;
+  --card-color: #F3F0FF;
+  --card-color-low: #C1B2FA;
+  
+}
+* {
+
+  padding: 0;
+  margin: 0;
+
+}
+body,html {
+
+  background-color: var(--bg-color);
+
+  min-height: 100vh;
+
+  font-family: 'Inter';
+  line-height: 130%;
+
+}
+#app {
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.drag-files {
+
+  background-color: var(--card-color);
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  max-width: 440px;
+  max-height: 160px;
+  position: relative;
+
+  padding: 28px 0 30px 0;
+  border: 1px dashed var(--card-color-low);
+  border-radius: 8px;
+
+  text-align: center;
+
+  user-select: none;
+
+  cursor: pointer;
+
+}
+@keyframes moveup {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.drag-files i.ph {
+
+  padding-bottom: 12px;
+
+  font-size: 48px;
+
+  color: var(--purple-title);
+
+  animation: moveup 1.5s infinite;
+  
+}
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0deg)
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+.drag-files h3 {
+
+  color: var(--purple-title);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  animation: rotate 1.5s linear infinite;
+
+}
+.drag-files p {
+
+  color: var(--gray-text);
+
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.drag-files input {
+
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+
+}
+.drag-files.dragover:hover {
+
+  background-color: var(--card-color-low);
+
+  transition-duration: .5s;
+
+}
+
+/* BOXES */
+
+.launcher-boxes {
+
+  display: grid;
+  flex: 1;
+
+}
+
+.box {
+
+  background-color: var(--card-color);
+
+  max-width: 440px;
+  height: 90px;
+
+  box-shadow: 1px 1px 16px var(--card-color);
+
+}
+
+
