@@ -30,24 +30,27 @@ body,html {
 
   min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-content: center;
+
+  gap: 20px;
 
 }
 .drag-files {
 
   background-color: var(--card-color);
 
+  transition: background-color 0.3s ease-in-out;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 
-  flex: 1;
-
-  max-width: 440px;
+  min-width: 440px;
   max-height: 160px;
   position: relative;
+  box-sizing: border-box;
 
   padding: 28px 0 30px 0;
   border: 1px dashed var(--card-color-low);
@@ -131,8 +134,6 @@ body,html {
 
   background-color: var(--card-color-low);
 
-  transition-duration: .5s;
-
 }
 
 /* BOXES */
@@ -140,19 +141,138 @@ body,html {
 .launcher-boxes {
 
   display: grid;
-  flex: 1;
+
+  gap: 12px;
 
 }
-
 .box {
 
   background-color: var(--card-color);
 
-  max-width: 440px;
-  height: 90px;
+  display: flex; 
 
+  max-width: 440px;
+  min-height: 72px;
+  padding: 8px;
+
+  box-sizing: border-box;
   box-shadow: 1px 1px 16px var(--card-color);
 
 }
+.upload {
 
+  --file-color: #AC96E4;
+  --bg-color: #E9E3F8;
+  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+  --text-color: #575361;
+  --number-color: #9892A6;
 
+}
+.finished {
+
+  --file-color: #73B172;
+  --bg-color: #DAF2D9;
+  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+  --text-color: #575361;
+  --number-color: #9892A6;
+
+}
+.error {
+
+  --file-color: #AC96E4;
+  --bg-color: #DAF2D9;
+  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+  --text-color: #575361;
+  --number-color: #9892A6;
+
+}
+.icon{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 56px;
+  border-radius: 4px;
+  margin-right: 12px;
+
+  background-color: var(--bg-color);
+
+}
+.icon i {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  color: var(--file-color);
+
+}
+.info {
+
+  padding-right: 16px;
+
+}
+.info > p {
+
+  color: var(--text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+
+}
+.info > span {
+
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 12px;
+
+}
+.bar {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+
+  position: relative;
+
+}
+.info .bar > progress{
+
+  width: 324px;
+  height: 8px;
+
+  padding-right: 8px;
+
+}
+.info .bar ::-webkit-progress-value {
+
+  border-radius: 10px;
+
+  background-color: var(--progress-color);
+
+}
+.info .bar ::-webkit-progress-bar {
+
+  border-radius: 10px;
+
+  background-color: #E3E3ED;
+
+}
+.info .bar > span{
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: var(--number-color);
+
+  position: absolute;
+  right: -40px;
+
+}
