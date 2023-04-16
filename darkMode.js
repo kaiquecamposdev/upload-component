@@ -1,4 +1,5 @@
-const switchButton = document.querySelector('i:nth-of-type(1)')
+const switchButton = document.querySelector('i.ph-moon')
+const switchButtonSun = document.querySelector('i.ph-sun')
 const divButton = document.querySelector('.dark-mode-div')
 
 switchButton.addEventListener('click', () => {
