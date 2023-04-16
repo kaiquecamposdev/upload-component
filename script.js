@@ -11,4 +11,3 @@ dropArea.addEventListener('dragleave', () => dropArea.classList.remove('dragover
 
 }
 mouseEvents()
-

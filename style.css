@@ -3,7 +3,7 @@
 :root {
 
   --purple-title: #7C3AED;
-  --gray-text: #746E82;
+  --gray-text: #575361;
 
   --bg-color: #FBFAFF;
   --card-color: #F3F0FF;
@@ -24,6 +24,58 @@ body,html {
 
   font-family: 'Inter';
   line-height: 130%;
+
+}
+.dark-mode {
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+}
+.dark-mode .dark-mode-div{
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: #575361;
+
+  border: 2px solid black;
+  border-radius: 50px; 
+
+  min-width: 60px;
+  height: 32px;
+
+  padding: 0;
+  margin: 0;
+
+}
+.dark-mode-div.dark-mode-on {
+
+  justify-content: flex-end;
+
+}
+.dark-mode i.ph-moon {
+
+  cursor: pointer;
+  
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+}
+i.ph-sun {
+
+  border-radius: 50px;
+
+  background-color: yellow;
 
 }
 #app {
@@ -74,9 +126,15 @@ body,html {
     transform: translateY(0);
   }
 }
-.drag-files i.ph {
+.drag-files i {
 
-  padding-bottom: 12px;
+  padding-bottom: 10px;
+
+  width: max-content;
+  height: max-content;
+
+}
+.drag-files i.ph {
 
   font-size: 48px;
 
@@ -164,7 +222,7 @@ body,html {
   --file-color: #AC96E4;
   --bg-color: #E9E3F8;
   --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
-  --text-color: #575361;
+  --text-color: #857E95;
   --number-color: #9892A6;
 
 }
@@ -172,17 +230,17 @@ body,html {
 
   --file-color: #73B172;
   --bg-color: #DAF2D9;
-  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
-  --text-color: #575361;
-  --number-color: #9892A6;
+  --progress-color: #73B172;
+  --text-color: #857E95;
+  --number-color: #4E884D;
 
 }
 .error {
 
-  --file-color: #AC96E4;
-  --bg-color: #DAF2D9;
-  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
-  --text-color: #575361;
+  --file-color: #E36363;
+  --bg-color: #F2D9D9;
+  --progress-color: #E3E3ED;
+  --text-color: #857E95;
   --number-color: #9892A6;
 
 }
@@ -218,7 +276,7 @@ body,html {
 }
 .info > p {
 
-  color: var(--text-color);
+  color: var(--gray-text);
 
   font-weight: 700;
   font-size: 14px;
@@ -230,6 +288,8 @@ body,html {
 
   font-weight: 500;
   font-size: 12px;
+
+  margin-bottom: 8px;
 
 }
 .bar {
@@ -250,12 +310,14 @@ body,html {
 
   padding-right: 8px;
 
+  appearance: none;
+
 }
 .info .bar ::-webkit-progress-value {
 
   border-radius: 10px;
 
-  background-color: var(--progress-color);
+  background: var(--progress-color);
 
 }
 .info .bar ::-webkit-progress-bar {

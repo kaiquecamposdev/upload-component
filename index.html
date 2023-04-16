@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Componente de upload</title>
 
-  <link rel="stylesheet" href="public/style.css">
-  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
-  <script src="public/script.js" defer ></script>
+  <link rel="stylesheet" href="style.css">
 
 </head>
   <body>
+
+    <div class="dark-mode">
+      <span class="dark-mode-div">
+        <i class="ph ph-moon"></i>
+      </span>
+    </div>
 
     <div id="app">
 
@@ -70,11 +74,6 @@
             </div>
   
           </div>
-          <div class="x-action">
-  
-            <i class="ph ph-x"></i>
-  
-          </div>
 
         </div>
         <div class="box error">
@@ -91,14 +90,14 @@
             <div class="bar">
   
               <progress max="100" value="46"></progress>
-              <span>46%</span>
+              <span>Erro</span>
     
             </div>
   
           </div>
-          <div class="x-action">
+          <div class="action">
   
-            <i class="ph arrow-counter-clockwise"></i>
+            <i class="ph ph-arrow-counter-clockwise"></i>
   
           </div>
 
@@ -106,6 +105,12 @@
       </section>
 
     </div>
-  
+
+<!-- Script's -->
+
+<script src="darkMode.js"></script>
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+<script src="script.js" defer ></script>
+
   </body>
 </html>
