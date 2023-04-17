@@ -41,6 +41,8 @@ body.darkModeColors {
 }
 input#switchButton {
 
+  user-select: none;
+
   width: 100px;
   height: 50px;
 
@@ -72,6 +74,8 @@ input#switchButton {
 }
 label#switchButtonLabel {
 
+  user-select: none;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,17 +100,23 @@ label#switchButtonLabel {
 
   background-color: #fff;
 
+  user-select: none;
+
   transform: translate(60px);
   transition: .5s ease-in-out;
 
 }
 #switchButtonLabel.switchDesative{
 
+  user-select: none;
+
   transform: translate(0px);
   transition: .5s ease-in-out;
 
 }
 #switchButtonLabel i.ph.ph-moon {
+
+  user-select: none;
 
   font-size: 2rem;
 
@@ -115,6 +125,8 @@ label#switchButtonLabel {
 } 
 #switchButtonLabel i.ph.ph-sun {
   
+  user-select: none;
+
   font-size: 2rem;
 
   color: #202020;

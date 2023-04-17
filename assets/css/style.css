@@ -35,7 +35,7 @@ body {
   font-family: 'Inter';
   line-height: 130%;
 
-  transition: background-color .85s ease-in-out;
+  transition:all .6s ease-in-out;
 
 }
 #darkModeDiv {
@@ -85,8 +85,6 @@ body {
 
   background-color: var(--card-color);
 
-  transition: background-color .3s ease-in-out;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +105,8 @@ body {
 
   cursor: pointer;
 
+  transition:all .6s ease-in-out;
+
 }
 @keyframes moveup {
   0% {
@@ -121,6 +121,8 @@ body {
 }
 .drag-files i {
 
+  user-select: none;
+
   padding-bottom: 0.625rem;
 
   width: max-content;
@@ -128,6 +130,8 @@ body {
 
 }
 .drag-files i.ph {
+
+  user-select: none;
 
   font-size: 3rem;
 
@@ -175,6 +179,10 @@ body {
 }
 .drag-files input {
 
+  transition:all .6s ease-in-out;
+
+  user-select: none;
+
   all: unset;
   opacity: 0;
   inset: 0;
@@ -210,6 +218,8 @@ body {
   box-sizing: border-box;
   box-shadow: 1px 1px 16px var(--card-color);
 
+  transition:all .6s ease-in-out;
+
 }
 .upload {
 
@@ -238,6 +248,8 @@ body {
 }
 .icon{
 
+  transition:all .6s ease-in-out;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,8 +272,12 @@ body {
 
   color: var(--file-color);
 
+  transition:all .6s ease-in-out;
+
 }
 .info {
+
+  transition:all .6s ease-in-out;
 
   padding-right: 1rem;
 
@@ -293,6 +309,8 @@ body {
   flex: 1;
 
   position: relative;
+
+  transition:all .6s ease-in-out;
 
 }
 .info .bar > progress{
