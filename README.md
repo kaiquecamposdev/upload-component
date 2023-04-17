@@ -8,14 +8,14 @@
 
 ## 💻 PC Version <a name="pc-version"></a> 
 
-<img src="assets/PcVersionLight.png">
-<img src="assets/PcVersionDark.png">
+<img src="assets/imgs/PcVersionLight.png">
+<img src="assets/imgs/PcVersionDark.png">
 
 ## 📱 Mobile Version <a name="mobile-version"></a>
 
 <div align="center">
-  <img src="assets/MobileVersionLight.png">
-  <img src="assets/MobileVersionDark.png">
+  <img src="assets/imgs/MobileVersionLight.png">
+  <img src="assets/imgs/MobileVersionDark.png">
 </div>
 
 ### 🚀 Techs <a name="techs"></a>

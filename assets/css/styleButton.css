@@ -81,7 +81,7 @@ label#switchButtonLabel {
   
   position: relative;
 
-  right: 50px;
+  right: 30px;
 
   width: 50px;
   height: 50px;
@@ -96,13 +96,13 @@ label#switchButtonLabel {
 
   background-color: #fff;
 
-  transform: translate(80px);
+  transform: translate(60px);
   transition: .5s ease-in-out;
 
 }
 #switchButtonLabel.switchDesative{
 
-  transform: translate(20px);
+  transform: translate(0px);
   transition: .5s ease-in-out;
 
 }
