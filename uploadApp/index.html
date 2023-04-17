@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Componente de upload</title>
 
+  <link rel="stylesheet" href="mediaQueries.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../switchButton/styleButton.css">
 
 </head>
   <body>
 
-    <input type="checkbox" name="toogle" id="toogle">
-    <label for="toogle"></label>
-
+    <div id="darkModeDiv">
+      <div class="darkMode">
+        <input type="checkbox" name="switch" id="switchButton">
+        <label for="switchButton" id="switchButtonLabel"><i class="ph ph-moon"></i></label>
+      </div>
+    </div>
     <div id="app">
 
       <section class="drag-files">
@@ -45,7 +50,7 @@
             </div>
 
           </div>
-          <div class="x-action">
+          <div class="action">
 
             <i class="ph ph-x"></i>
 
@@ -105,9 +110,9 @@
 
 <!-- Script's -->
 
-<script src="darkMode.js"></script>
 <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 <script src="script.js" defer ></script>
+<script src="../switchButton/switchButton.js" defer></script>
 
   </body>
 </html>

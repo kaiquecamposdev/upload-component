@@ -1,0 +1,122 @@
+body {
+
+  transition: background-color .85s ease-in-out;
+
+}
+body.darkModeColors {
+
+  --purple-title: #7C3AED;
+  --gray-text: #ffffff;
+  --number-color: #ddd6ec;
+
+  --bg-color: #202020;
+  --card-color: #2c2c2c;
+  --card-color-low: #7c3aed44;
+  --action: #7C3AED;
+
+}
+.darkModeColors .upload {
+
+  --file-color: #703bf8;
+  --bg-color: #ae8eff;
+  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+  --bar-text-color: #a17cff;
+
+}
+.darkModeColors .finished {
+
+  --file-color: #07e603;
+  --bg-color: #afffad;
+  --progress-color: #07e603;
+  --bar-text-color: #96ff94;
+
+}
+.darkModeColors .error {
+
+  --file-color: #ff3939;
+  --bg-color: #ff9e9e;
+  --progress-color: #E3E3ED;
+  --bar-text-color: #ff3939;
+
+}
+input#switchButton {
+
+  width: 100px;
+  height: 50px;
+
+  position: absolute;
+
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, #202020 100%);
+
+  border: 2px solid #202020;
+  border-radius: 6.25rem;
+
+  box-shadow: inset 1px 1px 40px rgb(0, 0, 0);
+
+  cursor: pointer;
+
+  appearance: none;
+
+  transition: background .85s ease-in-out;
+
+}
+#switchButton.unchecked {
+
+  background: linear-gradient(90deg, rgba(255,255,255,1) 10% #202020 100%);
+
+}
+#switchButton.checked {
+
+  background: linear-gradient(90deg, rgba(255,255,255,1) 100% #202020 10% );
+
+}
+label#switchButtonLabel {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #202020;
+  border: 1px solid #202020;
+  
+  position: relative;
+
+  right: 50px;
+
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+}
+#switchButtonLabel.switchActive{
+
+  background-color: #fff;
+
+  transform: translate(80px);
+  transition: .5s ease-in-out;
+
+}
+#switchButtonLabel.switchDesative{
+
+  transform: translate(20px);
+  transition: .5s ease-in-out;
+
+}
+#switchButtonLabel i.ph.ph-moon {
+
+  font-size: 2rem;
+
+  color: #ffffff;
+
+} 
+#switchButtonLabel i.ph.ph-sun {
+  
+  font-size: 2rem;
+
+  color: #202020;
+
+}
